@@ -24,7 +24,7 @@ public class SmsService {
     @Value("${twilio.phone.to}")
     private String twilioPhoneTo;
 
-    private SaleRepository saleRepository;
+    private final SaleRepository saleRepository;
 
     public SmsService(SaleRepository saleRepository) {
         this.saleRepository = saleRepository;
